@@ -6,11 +6,13 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
+import java.util.List;
+
 public class HomePage extends PageBase {
 
-
     public Actions actions;
-
+    @FindBy(xpath = "//p[@class='content']")
+    public WebElement addedToWishListMsg;
     @FindBy(linkText = "Register")
     WebElement registrationLink;
 
@@ -47,23 +49,8 @@ public class HomePage extends PageBase {
     @FindBy(xpath = "//li[@class='youtube']/a")
     WebElement Youtube;
 
-    @FindBy(linkText = "Apple MacBook Pro 13-inch")
-    WebElement macAppel;
-    @FindBy(id = "add-to-wishlist-button-4")
-    WebElement wishListBtn;
-    @FindBy(xpath = "//p[@class=\"content\"]")
-    WebElement addedToWishListMsg;
-    @FindBy(id = "add-to-cart-button-4")
-    WebElement addToCartBtn;
-    @FindBy(xpath = "//p[@class=\"content\"]")
-    WebElement addedToCartMsg;
-
-    //@FindBy(css = "button.button-2.add-to-compare-list-button")
-    //WebElement addToCompareListBtn;
-
-    @FindBy(xpath = "//p[@class=\"content\"]")
-    WebElement addedToCompareListMsg;
-
+    @FindBy(className = "add-to-wishlist-button")
+    List<WebElement> wishListBtn;
 
     public HomePage(WebDriver driver) {
         super(driver);
@@ -118,37 +105,11 @@ public class HomePage extends PageBase {
         }
     }
 
-    public void clickApparel() {
-        apparel.click();
-    }
-
-    public void clickOnMacApple() {
-        macAppel.click();
-
-    }
-
     public void clickAddToWishList() {
-        wishListBtn.click();
+        ClickButtons(wishListBtn.get(2));
     }
-
-    public void clickAddToCart() {
-        addToCartBtn.click();
-    }
-
-    public void clickAddToCompareL() {
-        // addToCompareListBtn.click();
-    }
-
 
     public WebElement getAddedToWishListMsg() {
         return addedToWishListMsg;
-    }
-
-    public WebElement getAddedToCartMsg() {
-        return addedToCartMsg;
-    }
-
-    public WebElement getAddedToCompareListMsg() {
-        return addedToCompareListMsg;
     }
 }

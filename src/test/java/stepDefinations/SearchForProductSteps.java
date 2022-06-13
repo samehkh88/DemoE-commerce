@@ -7,7 +7,6 @@ import factory.DriverFactory;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.testng.Assert;
 
 public class SearchForProductSteps extends TestRunnerTest {
 

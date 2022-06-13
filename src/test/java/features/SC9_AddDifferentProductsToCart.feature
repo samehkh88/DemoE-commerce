@@ -1,4 +1,3 @@
-@Test
 Feature:  Logged user could add different products to Shopping cart
 
   Background:
