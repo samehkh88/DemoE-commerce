@@ -26,10 +26,11 @@ public class SearchForProductSteps extends TestRunnerTest {
         homePage.clickSearchButton();
     }
 
-    @Then("^the system show related product and the user can add it to the cart$")
-    public void the_system_show_related_product_and_the_user_can_add_it_to_the_cart() {
+    @Then("^the system show related product that include \"([^\"]*)\"$")
+    public void the_system_show_related_product_that_include_something(String strArg1) throws InterruptedException {
         SearchResultPageObj = new SearchResultPage(driver);
-        Assert.assertEquals(SearchResultPageObj.ProductName.getText(), "Apple MacBook Pro 13-inch");
+        Thread.sleep(1000);
+        SearchResultPageObj.checkProductName(strArg1);
     }
 
 }

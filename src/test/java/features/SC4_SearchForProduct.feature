@@ -7,7 +7,7 @@ Feature:  Logged User could search for any product on the system
 
   Scenario:  Logged User could search for any product
 
-    Given user writes Product name "Apple MacBook"
+    Given user writes Product name "apple"
     When user click on search button
-    Then the system show related product and the user can add it to the cart
+    Then the system show related product that include "Apple"
     And log out

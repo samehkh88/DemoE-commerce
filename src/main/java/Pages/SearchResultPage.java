@@ -3,6 +3,7 @@ package Pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 
 import java.util.List;
 
@@ -10,6 +11,9 @@ public class SearchResultPage extends PageBase {
 
     @FindBy(xpath = "//h2[@class='product-title']")
     public WebElement ProductName;
+
+    @FindBy(xpath = "//h2[@class='product-title']/a")
+    List<WebElement> ProductNames;
 
     @FindBy(className = "product-item")
     public List<WebElement> NumOfProducts;
@@ -27,12 +31,17 @@ public class SearchResultPage extends PageBase {
         super(driver);
     }
 
-    public WebElement getAddToCartBtn() {
-        return addToCartBtn;
-    }
-
     public void ClickAddToCart() {
         ClickButtons(addToCartBtn);
+    }
+
+    public void checkProductName(String CheckText)
+    {
+        for(int i = 0 ; i < ProductNames.size() ; i++)
+        {
+            String name = ProductNames.get(i).getText();
+            Assert.assertTrue(name.contains(CheckText));
+        }
     }
 
 
