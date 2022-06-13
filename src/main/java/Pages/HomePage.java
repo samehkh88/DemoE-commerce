@@ -6,13 +6,13 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
+import java.security.PublicKey;
 import java.util.List;
 
 public class HomePage extends PageBase {
 
     public Actions actions;
-    @FindBy(xpath = "//p[@class='content']")
-    public WebElement addedToWishListMsg;
+
     @FindBy(linkText = "Register")
     WebElement registrationLink;
 
@@ -51,6 +51,20 @@ public class HomePage extends PageBase {
 
     @FindBy(className = "add-to-wishlist-button")
     List<WebElement> wishListBtn;
+
+    @FindBy(xpath = "//p[@class='content']")
+    public WebElement addedToWishListMsg;
+
+    @FindBy(xpath = ".//div[@class='bar-notification success']")
+    public WebElement addedToWishListMsgContainer ;
+
+    @FindBy(className = "ico-wishlist")
+    public WebElement WishlistLink ;
+
+    @FindBy(className = "close")
+    public WebElement CloseX ;
+
+
 
     public HomePage(WebDriver driver) {
         super(driver);
@@ -105,11 +119,17 @@ public class HomePage extends PageBase {
         }
     }
 
-    public void clickAddToWishList() {
+    public void clickAddToWishList() throws InterruptedException {
         ClickButtons(wishListBtn.get(2));
+        Thread.sleep(2000);
+    }
+    public void CloseMessgae()
+    {
+        ClickButtons(CloseX);
     }
 
-    public WebElement getAddedToWishListMsg() {
-        return addedToWishListMsg;
+    public void OpenWishListPage()
+    {
+        ClickButtons(WishlistLink);
     }
 }
