@@ -9,3 +9,9 @@ Feature: user could log in with correct data
       | sameh17@netservex.com | Test@123 |
     Then the system redirect to the home page and log out appear
     And log out
+
+  Scenario: User couldnot log in with Invalid email and Invalid password
+
+    Given user enter Invalid Username and Invalid password and click login
+      | sameh20@netservex.com | Test@123 |
+    Then the system Show error message "Login was unsuccessful. Please correct the errors and try again."

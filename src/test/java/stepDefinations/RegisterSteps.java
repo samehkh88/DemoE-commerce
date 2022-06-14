@@ -22,7 +22,7 @@ public class RegisterSteps extends TestRunnerTest {
     public void the_user_in_home_page_and_naviagte_to_register_page() {
         driver = DriverFactory.getDriver();
         Home = new HomePage(driver);
-        Home.clickRegistration();
+        Home.openRegisterPage();
     }
 
     @When("^user enter the required date \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" then click register$")

@@ -7,23 +7,23 @@ import org.openqa.selenium.support.FindBy;
 public class ResetPasswordPage extends PageBase {
 
     @FindBy(xpath = "//p[@class=\"content\"]")
-    public WebElement recoverMessage;
+    public WebElement ResetPasswordMessage;
     @FindBy(id = "Email")
     WebElement emailField;
     @FindBy(xpath = "//button[@name=\"send-email\"]")
-    WebElement recoverButton;
+    WebElement resetButton;
 
     public ResetPasswordPage(WebDriver driver) {
         super(driver);
     }
 
-    public void recoverPassword(String email) {
+    public void ResetPassword(String email) {
         SendValue(emailField, email);
-        ClickButtons(recoverButton);
+        ClickButtons(resetButton);
 
     }
 
-    public WebElement getRecoverMessage() {
-        return recoverMessage;
+    public WebElement getResetPasswordMessage() {
+        return ResetPasswordMessage;
     }
 }

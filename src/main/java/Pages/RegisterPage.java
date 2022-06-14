@@ -9,40 +9,48 @@ import org.openqa.selenium.support.ui.Select;
 public class RegisterPage extends PageBase {
 
     @FindBy(id = "gender-male")
-    WebElement genderMale;
+    WebElement Male;
+
     @FindBy(id = "gender-female")
-    WebElement genderFemale;
+    WebElement Female;
+
     @FindBy(id = "FirstName")
-    WebElement firstNameText;
+    WebElement firstName;
+
     @FindBy(id = "LastName")
-    WebElement lastNameText;
+    WebElement lastName;
+
     @FindBy(id = "Email")
-    WebElement emailText;
+    WebElement emailField;
+
     @FindBy(id = "Password")
-    WebElement passwordText;
+    WebElement passwordField;
+
     @FindBy(id = "ConfirmPassword")
     WebElement confirmPasswordText;
-    @FindBy(id = "register-button")
-    WebElement registerBtn;
+
     @FindBy(css = "div.result")
-    WebElement rigsteredMsg;
+    WebElement RigsteredMessage;
+
     @FindBy(xpath = "//a[@class=\"ico-logout\"]")
-    WebElement logoutBtn;
+    WebElement logout;
+
+    @FindBy(id = "register-button")
+    WebElement SubmitButton;
 
 
     public RegisterPage(WebDriver driver) {
         super(driver);
     }
 
-    public void register(String gender, String firstName, String lastName, String email,
-                         String password, String confirmPassword) {
+    public void register(String gender, String firstName, String lastName, String email, String password, String confirmPassword) {
         if (gender == "Male") {
-            ClickButtons(genderMale);
+            ClickButtons(Male);
         } else {
-            ClickButtons(genderFemale);
+            ClickButtons(Female);
         }
-        SendValue(firstNameText, firstName);
-        SendValue(lastNameText, lastName);
+        SendValue(this.firstName, firstName);
+        SendValue(this.lastName, lastName);
 
         Select Day = new Select(driver.findElement(By.name("DateOfBirthDay")));
         Day.selectByIndex(10);
@@ -50,21 +58,23 @@ public class RegisterPage extends PageBase {
         Select Month = new Select(driver.findElement(By.name("DateOfBirthMonth")));
         Month.selectByIndex(3);
 
-        SendValue(emailText, email);
-        SendValue(passwordText, password);
+        SendValue(emailField, email);
+        SendValue(passwordField, password);
         SendValue(confirmPasswordText, confirmPassword);
-        ClickButtons(registerBtn);
+        ClickButtons(SubmitButton);
     }
 
     public void logOut() {
-        ClickButtons(logoutBtn);
+        ClickButtons(logout);
     }
 
     public WebElement getRigsteredMsg() {
-        return rigsteredMsg;
+        return RigsteredMessage;
     }
 
-    public WebElement getLogoutBtn() {
-        return logoutBtn;
+
+
+    public WebElement getLogout() {
+        return logout;
     }
 }

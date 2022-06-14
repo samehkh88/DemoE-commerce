@@ -7,26 +7,29 @@ import org.openqa.selenium.support.FindBy;
 public class LoginPage extends PageBase {
 
     @FindBy(id = "Email")
-    WebElement emailTxt;
+    WebElement emailField;
     @FindBy(id = "Password")
-    WebElement passwordTxt;
+    WebElement passwordField;
     @FindBy(xpath = "//button[@class=\"button-1 login-button\"]")
-    WebElement loginBtn;
+    WebElement loginButton;
     @FindBy(linkText = "Forgot password?")
-    WebElement forgotPasswordBtn;
+    WebElement forgotPasswordButton;
+
+    @FindBy(xpath = ".//div[@class='message-error validation-summary-errors']")
+    public WebElement errorMessage ;
 
     public LoginPage(WebDriver driver) {
         super(driver);
     }
 
-    public void login(String email, String password) {
-        SendValue(emailTxt, email);
-        SendValue(passwordTxt, password);
-        ClickButtons(loginBtn);
+    public void loginFun(String email, String password) {
+        SendValue(emailField, email);
+        SendValue(passwordField, password);
+        ClickButtons(loginButton);
     }
 
-    public void clickForgotPassword() {
-        ClickButtons(forgotPasswordBtn);
+    public void ForgotPasswordFun() {
+        ClickButtons(forgotPasswordButton);
     }
 
 }

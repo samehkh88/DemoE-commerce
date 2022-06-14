@@ -29,9 +29,9 @@ public class WishListSteps extends TestRunnerTest {
     @And("^the system show green success message$")
     public void the_system_show_green_success_message() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.visibilityOf(home.addedToWishListMsg));
-        Assert.assertEquals(home.addedToWishListMsg.getText(), "The product has been added to your wishlist");
-        Assert.assertEquals(home.addedToWishListMsgContainer.getCssValue("background-color"), "rgba(75, 176, 122, 1)");
+        wait.until(ExpectedConditions.visibilityOf(home.WishListMessage));
+        Assert.assertEquals(home.WishListMessage.getText(), "The product has been added to your wishlist");
+        Assert.assertEquals(home.WishListMessageContainer.getCssValue("background-color"), "rgba(75, 176, 122, 1)");
     }
 
 

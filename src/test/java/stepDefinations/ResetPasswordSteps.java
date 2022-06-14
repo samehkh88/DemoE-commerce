@@ -22,13 +22,13 @@ public class ResetPasswordSteps extends TestRunnerTest {
     @When("^User click on forgot password$")
     public void user_click_on_forgot_password() {
         loginPageObj = new LoginPage(driver);
-        loginPageObj.clickForgotPassword();
+        loginPageObj.ForgotPasswordFun();
     }
 
     @And("^user enters his email \"([^\"]*)\" to recover his password$")
     public void user_enters_his_email_something_to_recover_his_password(String Email) {
         ResetPasswordPageObj = new ResetPasswordPage(driver);
-        ResetPasswordPageObj.recoverPassword(Email);
+        ResetPasswordPageObj.ResetPassword(Email);
 
     }
 
@@ -36,8 +36,8 @@ public class ResetPasswordSteps extends TestRunnerTest {
     @Then("^The system show Success message that system will send mail to the user$")
     public void the_system_show_success_message_that_system_will_send_mail_to_the_user() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.visibilityOf(ResetPasswordPageObj.recoverMessage));
-        Assert.assertTrue(ResetPasswordPageObj.getRecoverMessage().getText().
+        wait.until(ExpectedConditions.visibilityOf(ResetPasswordPageObj.ResetPasswordMessage));
+        Assert.assertTrue(ResetPasswordPageObj.getResetPasswordMessage().getText().
                 contains("Email with instructions has been sent to you"));
     }
 

@@ -9,8 +9,7 @@ public class PageBase {
 
     static protected Select select;
     protected WebDriver driver;
-
-    // create constructor
+    
     public PageBase(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);

@@ -1,1 +1,0 @@
-file:src/test/java/features/SC8_FollowUs.feature:13

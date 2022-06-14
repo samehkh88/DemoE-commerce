@@ -8,8 +8,10 @@ public class ProductPage extends PageBase {
 
     @FindBy(id = "add-to-cart-button-4")
     public WebElement AddToCartButton;
+
     @FindBy(xpath = "//p[@class='content']")
     public WebElement SuccessMessage;
+
     @FindBy(className = "close")
     WebElement CloseMessage;
 

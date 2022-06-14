@@ -17,12 +17,12 @@ public class SearchForProductSteps extends TestRunnerTest {
     public void user_writes_product_name_something(String SerachText) {
         driver = DriverFactory.getDriver();
         homePage = new HomePage(driver);
-        homePage.searchItem(SerachText);
+        homePage.searchFun(SerachText);
     }
 
     @When("^user click on search button$")
     public void user_click_on_search_button() {
-        homePage.clickSearchButton();
+        homePage.clickSearch();
     }
 
     @Then("^the system show related product that include \"([^\"]*)\"$")

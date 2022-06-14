@@ -6,7 +6,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
-import java.security.PublicKey;
+import javax.xml.xpath.XPath;
 import java.util.List;
 
 public class HomePage extends PageBase {
@@ -14,19 +14,19 @@ public class HomePage extends PageBase {
     public Actions actions;
 
     @FindBy(linkText = "Register")
-    WebElement registrationLink;
+    WebElement registerLink;
 
     @FindBy(linkText = "Log in")
-    WebElement loginBtn;
+    WebElement loginLink;
 
     @FindBy(id = "small-searchterms")
-    WebElement searchTxt;
+    WebElement searchTextField;
 
     @FindBy(css = ".button-1.search-box-button")
-    WebElement searchBtn;
+    WebElement searchButton;
 
     @FindBy(id = "customerCurrency")
-    WebElement currencyDropList;
+    WebElement currencyList;
 
     @FindBy(xpath = "//ul[@class='top-menu notmobile']/li[1]")
     WebElement computers;
@@ -53,10 +53,10 @@ public class HomePage extends PageBase {
     List<WebElement> wishListBtn;
 
     @FindBy(xpath = "//p[@class='content']")
-    public WebElement addedToWishListMsg;
+    public WebElement WishListMessage;
 
     @FindBy(xpath = ".//div[@class='bar-notification success']")
-    public WebElement addedToWishListMsgContainer ;
+    public WebElement WishListMessageContainer;
 
     @FindBy(className = "ico-wishlist")
     public WebElement WishlistLink ;
@@ -64,32 +64,49 @@ public class HomePage extends PageBase {
     @FindBy(className = "close")
     public WebElement CloseX ;
 
+    @FindBy(xpath = ".//div[@class='nivo-controlNav']/a[1]")
+    List<WebElement> SliderList ;
+
+    @FindBy(xpath = ".//div[@class='nivo-controlNav']/a[1]")
+     WebElement SliderFirst;
+
+    @FindBy(xpath = ".//div[@class='nivo-controlNav']/a[2]")
+    WebElement SliderSecond;
+
+    @FindBy(xpath = ".//div[@id='nivo-slider']/a[1]")
+    WebElement SliderFirstImage;
+
+    @FindBy(xpath = ".//div[@id='nivo-slider']/a[2]")
+    WebElement SliderSecondImage;
+
+    @FindBy(className = "ico-account")
+    public WebElement myAccount;
 
 
     public HomePage(WebDriver driver) {
         super(driver);
     }
 
-    public void clickRegistration() {
-        registrationLink.click();
+    public void openRegisterPage() {
+        ClickButtons(registerLink);
     }
 
-    public void clickOnLogin() {
-        loginBtn.click();
+    public void OpenLoginPage() {
+        ClickButtons(loginLink);
     }
 
 
-    public void searchItem(String itemName) {
-        ClickButtons(searchTxt);
-        SendValue(searchTxt, itemName);
+    public void searchFun(String itemName) {
+        ClickButtons(searchTextField);
+        SendValue(searchTextField, itemName);
     }
 
-    public void clickSearchButton() {
-        ClickButtons(searchBtn);
+    public void clickSearch() {
+        ClickButtons(searchButton);
     }
 
     public void switchCurrency() {
-        select = new Select(currencyDropList);
+        select = new Select(currencyList);
         select.selectByVisibleText("Euro");
     }
 
@@ -132,4 +149,19 @@ public class HomePage extends PageBase {
     {
         ClickButtons(WishlistLink);
     }
+
+    public void SelectSlider(String valS) throws InterruptedException {
+        if(valS.equalsIgnoreCase("first"))
+        {
+            ClickButtons(SliderFirst);
+            ClickButtons(SliderFirstImage);
+        } else if (valS.equalsIgnoreCase("second"))
+        {
+            ClickButtons(SliderSecond);
+            Thread.sleep(1000);
+            ClickButtons(SliderSecondImage);
+        }
+    }
+
+
 }
