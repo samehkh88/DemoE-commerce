@@ -1,3 +1,4 @@
+@Regression
 Feature: The links on slider page should working
 
   Scenario Outline:  The links on slider page should working

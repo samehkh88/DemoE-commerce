@@ -1,3 +1,4 @@
+@Regression
 Feature:  Logged User could search for any product on the system
 
   Background:

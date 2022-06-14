@@ -1,3 +1,4 @@
+@Regression
 Feature:  Logged user could filter with color
 
   Background:

@@ -1,3 +1,5 @@
+@Smoke
+@Regression
 Feature: user could log in with correct data
 
   Background:

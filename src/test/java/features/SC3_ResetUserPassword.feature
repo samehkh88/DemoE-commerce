@@ -1,3 +1,4 @@
+@Regression
 Feature: User could reset his/her password from login page by enter his mail
 
   Scenario: User could reset his/her password successfully

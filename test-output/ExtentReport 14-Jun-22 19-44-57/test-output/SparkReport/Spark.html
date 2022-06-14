@@ -1,0 +1,1557 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jun 14, 2022 07:44:57 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@Smoke</a><a class="dropdown-item" href="#">@Regression</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Logged user could add different products to Wishlist</p>
+            <p class="text-sm">
+              <span>7:44:58 PM</span> / <span>00:00:06:970</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Logged user could add different products to Wishlist</h5>
+<span class='badge badge-success'>06.14.2022 7:44:58 PM</span>
+<span class='badge badge-danger'>06.14.2022 7:45:05 PM</span>
+<span class='badge badge-default'>00:00:06:970</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Logged user could add different products to Wishlist</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinations.WishListSteps.user_in_homepage_and_add_product_to_his_wishlist()">
+                <span>Given User in homepage and add product to his wishlist</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.WishListSteps.the_system_show_green_success_message()">
+                <span>And the system show green success message</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.WishListSteps.user_go_to_his_wishlist()">
+                <span>When user go to his Wishlist</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.WishListSteps.the_user_find_product_something_in_the_wishlist(java.lang.String)">
+                <span>Then The User find Product "HTC One M8 Android L 5.0 Lollipop" in the Wishlist</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="13"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">The links on slider page should working</p>
+            <p class="text-sm">
+              <span>7:45:05 PM</span> / <span>00:00:09:120</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">The links on slider page should working</h5>
+<span class='badge badge-success'>06.14.2022 7:45:05 PM</span>
+<span class='badge badge-danger'>06.14.2022 7:45:14 PM</span>
+<span class='badge badge-default'>00:00:09:120</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="14"><span class="badge log fail-bg mr-2">Fail</span>The links on slider page should working</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="15"><span class="badge log fail-bg mr-2">Fail</span>The links on slider page should working</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given User in home page and click on  "first"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then user verify that "https://demo.nopcommerce.com/nokia-lumia-1020" for Slider correct</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at stepDefinations.Slidersteps.user_verify_that_something_for_slider_correct(Slidersteps.java:25)
+	at ✽.user verify that "https://demo.nopcommerce.com/nokia-lumia-1020" for Slider correct(file:///C:/eclipse2%20work/Ecommerce-OnlineShopping/src/test/java/features/SC11_homeSlider.feature:7)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>hooks.MyHooks.AddScreenshot(io.cucumber.java.Scenario)</span>
+      <div>image
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./screenshots/embedded1.png' src="./screenshots/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="22"><span class="badge log fail-bg mr-2">Fail</span>The links on slider page should working</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given User in home page and click on  "second"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then user verify that "https://demo.nopcommerce.com/iphone-6 7" for Slider correct</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at stepDefinations.Slidersteps.user_verify_that_something_for_slider_correct(Slidersteps.java:25)
+	at ✽.user verify that "https://demo.nopcommerce.com/iphone-6 7" for Slider correct(file:///C:/eclipse2%20work/Ecommerce-OnlineShopping/src/test/java/features/SC11_homeSlider.feature:7)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>hooks.MyHooks.AddScreenshot(io.cucumber.java.Scenario)</span>
+      <div>image
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./screenshots/embedded2.png' src="./screenshots/embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="29"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">User Registration</p>
+            <p class="text-sm">
+              <span>7:45:14 PM</span> / <span>00:00:05:752</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">User Registration</h5>
+<span class='badge badge-success'>06.14.2022 7:45:14 PM</span>
+<span class='badge badge-danger'>06.14.2022 7:45:20 PM</span>
+<span class='badge badge-default'>00:00:05:752</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=29</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="30"><span class="badge log pass-bg mr-2">Pass</span>User could register with valid data</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="31"><span class="badge log pass-bg mr-2">Pass</span>User could register with valid data</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the User in home page and naviagte to register page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user enter the required date "Male" and "sameh" and "khalil" and "sameh18@netservex.com" and "Test@123" then click register</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the system show success message</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And log out</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="42"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">user could log in with correct data</p>
+            <p class="text-sm">
+              <span>7:45:20 PM</span> / <span>00:00:09:704</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">user could log in with correct data</h5>
+<span class='badge badge-success'>06.14.2022 7:45:20 PM</span>
+<span class='badge badge-danger'>06.14.2022 7:45:30 PM</span>
+<span class='badge badge-default'>00:00:09:704</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=42</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="43"><span class="badge log pass-bg mr-2">Pass</span>User could log in with valid email and password</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinations.LoginSteps.the_user_in_home_page_and_navigate_to_login_page()">
+                <span>Given the User in home page and navigate to login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.LoginSteps.user_enter_valid_username_and_valid_password_and_click_login(io.cucumber.datatable.DataTable)">
+                <span>Given user enter valid Username and valid password and click login</span>
+      <div><table class='markup-table table '><tr><td>sameh17@netservex.com</td><td>Test@123</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.LoginSteps.the_system_redirect_to_the_home_page_and_log_out_appear()">
+                <span>Then the system redirect to the home page and log out appear</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.RegisterSteps.log_out()">
+                <span>And log out</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="54"><span class="badge log pass-bg mr-2">Pass</span>User couldnot log in with Invalid email and Invalid password</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinations.LoginSteps.the_user_in_home_page_and_navigate_to_login_page()">
+                <span>Given the User in home page and navigate to login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.LoginSteps.user_enter_invalid_username_and_invalid_password_and_click_login(io.cucumber.datatable.DataTable)">
+                <span>Given user enter Invalid Username and Invalid password and click login</span>
+      <div><table class='markup-table table '><tr><td>sameh20@netservex.com</td><td>Test@123</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.LoginSteps.the_system_show_error_message_something(java.lang.String)">
+                <span>Then the system Show error message "Login was unsuccessful. Please correct the errors and try again."</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="63"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">User could reset his/her password from login page by enter his mail</p>
+            <p class="text-sm">
+              <span>7:45:30 PM</span> / <span>00:00:04:191</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">User could reset his/her password from login page by enter his mail</h5>
+<span class='badge badge-success'>06.14.2022 7:45:30 PM</span>
+<span class='badge badge-danger'>06.14.2022 7:45:34 PM</span>
+<span class='badge badge-default'>00:00:04:191</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=63</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="64"><span class="badge log pass-bg mr-2">Pass</span>User could reset his/her password successfully</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinations.LoginSteps.the_user_in_home_page_and_navigate_to_login_page()">
+                <span>Given the User in home page and navigate to login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.ResetPasswordSteps.user_click_on_forgot_password()">
+                <span>When User click on forgot password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.ResetPasswordSteps.user_enters_his_email_something_to_recover_his_password(java.lang.String)">
+                <span>And user enters his email "sameh17@netservex.com" to recover his password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.ResetPasswordSteps.the_system_show_success_message_that_system_will_send_mail_to_the_user()">
+                <span>Then The system show Success message that system will send mail to the user</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="75"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Logged User could search for any product on the system</p>
+            <p class="text-sm">
+              <span>7:45:34 PM</span> / <span>00:00:06:792</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Logged User could search for any product on the system</h5>
+<span class='badge badge-success'>06.14.2022 7:45:34 PM</span>
+<span class='badge badge-danger'>06.14.2022 7:45:41 PM</span>
+<span class='badge badge-default'>00:00:06:792</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=75</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="76"><span class="badge log pass-bg mr-2">Pass</span>Logged User could search for any product</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinations.LoginSteps.the_user_in_home_page_and_navigate_to_login_page()">
+                <span>Given the User in home page and navigate to login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.LoginSteps.user_enter_valid_username_and_valid_password_and_click_login(io.cucumber.datatable.DataTable)">
+                <span>Given user enter valid Username and valid password and click login</span>
+      <div><table class='markup-table table '><tr><td>sameh17@netservex.com</td><td>Test@123</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.SearchForProductSteps.user_writes_product_name_something(java.lang.String)">
+                <span>Given user writes Product name "apple"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.SearchForProductSteps.user_click_on_search_button()">
+                <span>When user click on search button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.SearchForProductSteps.the_system_show_related_product_that_include_something(java.lang.String)">
+                <span>Then the system show related product that include "Apple"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.RegisterSteps.log_out()">
+                <span>And log out</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="91"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Logged User could switch between currencies US-Euro</p>
+            <p class="text-sm">
+              <span>7:45:41 PM</span> / <span>00:00:06:686</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Logged User could switch between currencies US-Euro</h5>
+<span class='badge badge-success'>06.14.2022 7:45:41 PM</span>
+<span class='badge badge-danger'>06.14.2022 7:45:47 PM</span>
+<span class='badge badge-default'>00:00:06:686</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=91</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="92"><span class="badge log pass-bg mr-2">Pass</span>Logged User could switch between currencies US-Euro</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinations.LoginSteps.the_user_in_home_page_and_navigate_to_login_page()">
+                <span>Given the User in home page and navigate to login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.LoginSteps.user_enter_valid_username_and_valid_password_and_click_login(io.cucumber.datatable.DataTable)">
+                <span>Given user enter valid Username and valid password and click login</span>
+      <div><table class='markup-table table '><tr><td>sameh17@netservex.com</td><td>Test@123</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.SearchForProductSteps.user_writes_product_name_something(java.lang.String)">
+                <span>Given user writes Product name "Apple MacBook"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.SearchForProductSteps.user_click_on_search_button()">
+                <span>Given user click on search button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.ChangeCurrenciesSteps.user_selects_euro_from_currency_dropdown_list()">
+                <span>When user selects Euro from currency dropdown list</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.ChangeCurrenciesSteps.the_system_change_the_system_currency()">
+                <span>Then the system change the system currency</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.RegisterSteps.log_out()">
+                <span>And log out</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="109"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">the Logged user could select any different Categories in the system</p>
+            <p class="text-sm">
+              <span>7:45:47 PM</span> / <span>00:00:05:676</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">the Logged user could select any different Categories in the system</h5>
+<span class='badge badge-success'>06.14.2022 7:45:47 PM</span>
+<span class='badge badge-danger'>06.14.2022 7:45:53 PM</span>
+<span class='badge badge-default'>00:00:05:676</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=109</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="110"><span class="badge log pass-bg mr-2">Pass</span>Logged user could select different Categories</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinations.LoginSteps.the_user_in_home_page_and_navigate_to_login_page()">
+                <span>Given the User in home page and navigate to login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.LoginSteps.user_enter_valid_username_and_valid_password_and_click_login(io.cucumber.datatable.DataTable)">
+                <span>Given user enter valid Username and valid password and click login</span>
+      <div><table class='markup-table table '><tr><td>sameh17@netservex.com</td><td>Test@123</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.SelectCategorySteps.user_can_hover_on_computer_category_and_selects_sub_category_notebook()">
+                <span>When user can hover on computer category and selects sub category notebook</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.SelectCategorySteps.the_system_show_all_sub_category_products()">
+                <span>Then the system show all sub category products</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.RegisterSteps.log_out()">
+                <span>And log out</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="123"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Logged user could filter with color</p>
+            <p class="text-sm">
+              <span>7:45:53 PM</span> / <span>00:00:08:864</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Logged user could filter with color</h5>
+<span class='badge badge-success'>06.14.2022 7:45:53 PM</span>
+<span class='badge badge-danger'>06.14.2022 7:46:02 PM</span>
+<span class='badge badge-default'>00:00:08:864</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=123</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="124"><span class="badge log pass-bg mr-2">Pass</span>Logged user could filter with color</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinations.LoginSteps.the_user_in_home_page_and_navigate_to_login_page()">
+                <span>Given the User in home page and navigate to login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.LoginSteps.user_enter_valid_username_and_valid_password_and_click_login(io.cucumber.datatable.DataTable)">
+                <span>Given user enter valid Username and valid password and click login</span>
+      <div><table class='markup-table table '><tr><td>sameh17@netservex.com</td><td>Test@123</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.SortByColorSteps.user_navigates_to_apparel_shoes()">
+                <span>Given user navigates to Apparel & shoes</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.SortByColorSteps.user_selects_the_red_shoes()">
+                <span>When User selects the red shoes</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.SortByColorSteps.user_could_see_one_product_only()">
+                <span>Then user could see one product only</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.RegisterSteps.log_out()">
+                <span>And log out</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="139"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">the User can follow us on different Social media</p>
+            <p class="text-sm">
+              <span>7:46:02 PM</span> / <span>00:00:37:179</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">the User can follow us on different Social media</h5>
+<span class='badge badge-success'>06.14.2022 7:46:02 PM</span>
+<span class='badge badge-danger'>06.14.2022 7:46:39 PM</span>
+<span class='badge badge-default'>00:00:37:179</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=139</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="140"><span class="badge log fail-bg mr-2">Fail</span>the Social media links should be working</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="141"><span class="badge log pass-bg mr-2">Pass</span>the Social media links should be working</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User in home page and click on  "Facebook" Icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user verify that "https://www.facebook.com/nopCommerce" for every social correct</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="148"><span class="badge log pass-bg mr-2">Pass</span>the Social media links should be working</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User in home page and click on  "Twitter" Icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user verify that "https://twitter.com/nopCommerce" for every social correct</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="155"><span class="badge log pass-bg mr-2">Pass</span>the Social media links should be working</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User in home page and click on  "Youtube" Icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user verify that "https://www.youtube.com/user/nopCommerce" for every social correct</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="162"><span class="badge log fail-bg mr-2">Fail</span>the Social media links should be working</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given User in home page and click on  "RSS" Icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then user verify that "https://www.rss.com/user/nopCommerce" for every social correct</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:819)
+	at org.testng.Assert.assertEquals(Assert.java:829)
+	at stepDefinations.FollowUsSteps.user_verify_that_something_for_every_social_correct(FollowUsSteps.java:47)
+	at ✽.user verify that "https://www.rss.com/user/nopCommerce" for every social correct(file:///C:/eclipse2%20work/Ecommerce-OnlineShopping/src/test/java/features/SC8_FollowUs.feature:7)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>hooks.MyHooks.AddScreenshot(io.cucumber.java.Scenario)</span>
+      <div>image
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./screenshots/embedded3.png' src="./screenshots/embedded3.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="169"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Logged user could add different products to Shopping cart</p>
+            <p class="text-sm">
+              <span>7:46:39 PM</span> / <span>00:00:05:481</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Logged user could add different products to Shopping cart</h5>
+<span class='badge badge-success'>06.14.2022 7:46:39 PM</span>
+<span class='badge badge-danger'>06.14.2022 7:46:45 PM</span>
+<span class='badge badge-default'>00:00:05:481</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=169</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="170"><span class="badge log pass-bg mr-2">Pass</span>Logged user could add different products to Shopping cart</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinations.SearchForProductSteps.user_writes_product_name_something(java.lang.String)">
+                <span>Given user writes Product name "Apple MacBook"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.SearchForProductSteps.user_click_on_search_button()">
+                <span>Given user click on search button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.AddProductToCart.user_click_to_add_product_to_cart()">
+                <span>When user click to add Product to cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.AddProductToCart.user_can_add_this_item_to_the_shopping_cart_and_a_confirmation_message_will_be_shown()">
+                <span>Then user can add this item to the shopping cart and a confirmation message will be shown</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:45:08 PM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='19'>Then user verify that "https://demo.nopcommerce.com/nokia-lumia-1020" for Slider correct</a>
+<div class="">
+<span class="badge badge-default">The links on slider page should working.The links on slider page should working.Then user verify that "https://demo.nopcommerce.com/nokia-lumia-1020" for Slider correct</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:45:13 PM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='26'>Then user verify that "https://demo.nopcommerce.com/iphone-6 7" for Slider correct</a>
+<div class="">
+<span class="badge badge-default">The links on slider page should working.The links on slider page should working.Then user verify that "https://demo.nopcommerce.com/iphone-6 7" for Slider correct</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:46:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='139' id='166'>Then user verify that "https://www.rss.com/user/nopCommerce" for every social correct</a>
+<div class="">
+<span class="badge badge-default">the User can follow us on different Social media.the Social media links should be working.Then user verify that "https://www.rss.com/user/nopCommerce" for every social correct</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">@Smoke</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Smoke</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:44:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Logged user could add different products to Wishlist</a>
+<div class="">
+<span class="badge badge-default">Logged user could add different products to Wishlist.Logged user could add different products to Wishlist</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:45:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='29' id='30'>User could register with valid data</a>
+<div class="">
+<span class="badge badge-default">User Registration.User could register with valid data</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:45:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='29' id='31'>User could register with valid data</a>
+<div class="">
+<span class="badge badge-default">User Registration.User could register with valid data</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:45:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='42' id='43'>User could log in with valid email and password</a>
+<div class="">
+<span class="badge badge-default">user could log in with correct data.User could log in with valid email and password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:45:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='42' id='54'>User couldnot log in with Invalid email and Invalid password</a>
+<div class="">
+<span class="badge badge-default">user could log in with correct data.User couldnot log in with Invalid email and Invalid password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:46:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='169' id='170'>Logged user could add different products to Shopping cart</a>
+<div class="">
+<span class="badge badge-default">Logged user could add different products to Shopping cart.Logged user could add different products to Shopping cart</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>14</span>
+<span class='badge log badge-danger'>5</span>
+</span>
+<p class="name">@Regression</p>
+<p class="duration text-sm">19 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Regression</h4>
+<span status="pass" class='badge log pass-bg'>14 passed</span>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:44:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Logged user could add different products to Wishlist</a>
+<div class="">
+<span class="badge badge-default">Logged user could add different products to Wishlist.Logged user could add different products to Wishlist</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:45:05 PM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='14'>The links on slider page should working</a>
+<div class="">
+<span class="badge badge-default">The links on slider page should working.The links on slider page should working</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:45:05 PM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='15'>The links on slider page should working</a>
+<div class="">
+<span class="badge badge-default">The links on slider page should working.The links on slider page should working</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:45:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='22'>The links on slider page should working</a>
+<div class="">
+<span class="badge badge-default">The links on slider page should working.The links on slider page should working</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:45:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='29' id='30'>User could register with valid data</a>
+<div class="">
+<span class="badge badge-default">User Registration.User could register with valid data</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:45:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='29' id='31'>User could register with valid data</a>
+<div class="">
+<span class="badge badge-default">User Registration.User could register with valid data</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:45:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='42' id='43'>User could log in with valid email and password</a>
+<div class="">
+<span class="badge badge-default">user could log in with correct data.User could log in with valid email and password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:45:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='42' id='54'>User couldnot log in with Invalid email and Invalid password</a>
+<div class="">
+<span class="badge badge-default">user could log in with correct data.User couldnot log in with Invalid email and Invalid password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:45:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='63' id='64'>User could reset his/her password successfully</a>
+<div class="">
+<span class="badge badge-default">User could reset his/her password from login page by enter his mail.User could reset his/her password successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:45:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='75' id='76'>Logged User could search for any product</a>
+<div class="">
+<span class="badge badge-default">Logged User could search for any product on the system.Logged User could search for any product</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:45:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='91' id='92'>Logged User could switch between currencies US-Euro</a>
+<div class="">
+<span class="badge badge-default">Logged User could switch between currencies US-Euro.Logged User could switch between currencies US-Euro</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:45:47 PM</td>
+<td>
+<a href="#" class="linked" test-id='109' id='110'>Logged user could select different Categories</a>
+<div class="">
+<span class="badge badge-default">the Logged user could select any different Categories in the system.Logged user could select different Categories</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:45:53 PM</td>
+<td>
+<a href="#" class="linked" test-id='123' id='124'>Logged user could filter with color</a>
+<div class="">
+<span class="badge badge-default">Logged user could filter with color.Logged user could filter with color</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:46:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='139' id='140'>the Social media links should be working</a>
+<div class="">
+<span class="badge badge-default">the User can follow us on different Social media.the Social media links should be working</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:46:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='139' id='141'>the Social media links should be working</a>
+<div class="">
+<span class="badge badge-default">the User can follow us on different Social media.the Social media links should be working</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:46:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='139' id='148'>the Social media links should be working</a>
+<div class="">
+<span class="badge badge-default">the User can follow us on different Social media.the Social media links should be working</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:46:23 PM</td>
+<td>
+<a href="#" class="linked" test-id='139' id='155'>the Social media links should be working</a>
+<div class="">
+<span class="badge badge-default">the User can follow us on different Social media.the Social media links should be working</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:46:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='139' id='162'>the Social media links should be working</a>
+<div class="">
+<span class="badge badge-default">the User can follow us on different Social media.the Social media links should be working</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:46:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='169' id='170'>Logged user could add different products to Shopping cart</a>
+<div class="">
+<span class="badge badge-default">Logged user could add different products to Shopping cart.Logged user could add different products to Shopping cart</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jun 14, 2022 07:44:57 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jun 14, 2022 07:46:45 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>9</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>2</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='81%'>
+<b>9</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='18%'><b>2</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='81%'><b>13</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='18%'><b>3</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='95%'><b>59</b> steps passed</small></div>
+<div>
+<small data-tooltip='4%'><b>3</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Logged user could add different products to Wishlist":6.97,"The links on slider page should working":9.12,"User Registration":5.752,"user could log in with correct data":9.704,"User could reset his/her password from login page by enter his mail":4.191,"Logged User could search for any product on the system":6.792,"Logged User could switch between currencies US-Euro":6.686,"the Logged user could select any different Categories in the system":5.676,"Logged user could filter with color":8.864,"the User can follow us on different Social media":37.179,"Logged user could add different products to Shopping cart":5.481
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@Smoke</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Regression</td>
+<td>14</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>73.684%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 9,
+failParent: 2,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 13,
+failChild: 3,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 59,
+failGrandChild: 3,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

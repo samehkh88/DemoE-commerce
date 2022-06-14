@@ -1,0 +1,2 @@
+file:src/test/java/features/SC11_homeSlider.feature:11:12
+file:src/test/java/features/SC8_FollowUs.feature:14

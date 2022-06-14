@@ -1,3 +1,4 @@
+@Regression
 Feature:  the Logged user could select any different Categories in the system
 
   Background:

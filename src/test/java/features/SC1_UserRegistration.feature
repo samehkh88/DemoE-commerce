@@ -1,3 +1,5 @@
+@Smoke
+  @Regression
 Feature: User Registration
 
   Background:
@@ -11,4 +13,4 @@ Feature: User Registration
 
     Examples:
       | Gender | Firstname | Lastname | Email                 | Password |
-      | Male   | sameh     | khalil   | sameh17@netservex.com | Test@123 |
+      | Male   | sameh     | khalil   | sameh18@netservex.com | Test@123 |

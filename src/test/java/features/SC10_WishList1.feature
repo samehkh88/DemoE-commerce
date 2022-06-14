@@ -1,3 +1,5 @@
+@Smoke
+@Regression
 Feature: Logged user could add different products to Wishlist
 
   Scenario: Logged user could add different products to Wishlist
