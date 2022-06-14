@@ -23,8 +23,5 @@ public class PageBase {
         field.sendKeys(value);
     }
 
-    public void Clear(WebElement field) {
-        field.clear();
-    }
 
 }

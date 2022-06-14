@@ -65,9 +65,6 @@ public class HomePage extends PageBase {
     public WebElement CloseX ;
 
     @FindBy(xpath = ".//div[@class='nivo-controlNav']/a[1]")
-    List<WebElement> SliderList ;
-
-    @FindBy(xpath = ".//div[@class='nivo-controlNav']/a[1]")
      WebElement SliderFirst;
 
     @FindBy(xpath = ".//div[@class='nivo-controlNav']/a[2]")
@@ -87,29 +84,35 @@ public class HomePage extends PageBase {
         super(driver);
     }
 
+    // open register page
     public void openRegisterPage() {
         ClickButtons(registerLink);
     }
 
+    // open login page
     public void OpenLoginPage() {
         ClickButtons(loginLink);
     }
 
 
+    // Fun to enter text in search field
     public void searchFun(String itemName) {
         ClickButtons(searchTextField);
         SendValue(searchTextField, itemName);
     }
 
+    // search in home page top
     public void clickSearch() {
         ClickButtons(searchButton);
     }
 
+    // Switch the Currency
     public void switchCurrency() {
         select = new Select(currencyList);
         select.selectByVisibleText("Euro");
     }
 
+    // open cateogry computers and sub Software
     public void hoverComputerMenu() {
         actions = new Actions(driver);
         actions.moveToElement(computers).perform();
@@ -117,6 +120,7 @@ public class HomePage extends PageBase {
         actions.click().build().perform();
     }
 
+    // open cateogry apparel  and sub Shoes
     public void OpenSubcateogryShoes() {
         actions = new Actions(driver);
         actions.moveToElement(apparel).perform();
@@ -124,6 +128,7 @@ public class HomePage extends PageBase {
         actions.click().build().perform();
     }
 
+    // open Social links
     public void OpenSocialLinks(String val) {
         if (val.equalsIgnoreCase("Facebook")) {
             ClickButtons(Facebook);
@@ -136,20 +141,24 @@ public class HomePage extends PageBase {
         }
     }
 
+    // add product to wishlist
     public void clickAddToWishList() throws InterruptedException {
         ClickButtons(wishListBtn.get(2));
         Thread.sleep(2000);
     }
+    // close any message
     public void CloseMessgae()
     {
         ClickButtons(CloseX);
     }
 
+    // open Wishlist page
     public void OpenWishListPage()
     {
         ClickButtons(WishlistLink);
     }
 
+    // fun to select slider and open the slider
     public void SelectSlider(String valS) throws InterruptedException {
         if(valS.equalsIgnoreCase("first"))
         {

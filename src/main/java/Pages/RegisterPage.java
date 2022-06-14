@@ -15,10 +15,10 @@ public class RegisterPage extends PageBase {
     WebElement Female;
 
     @FindBy(id = "FirstName")
-    WebElement firstName;
+    WebElement firstNameField;
 
     @FindBy(id = "LastName")
-    WebElement lastName;
+    WebElement lastNameField;
 
     @FindBy(id = "Email")
     WebElement emailField;
@@ -30,10 +30,10 @@ public class RegisterPage extends PageBase {
     WebElement confirmPasswordText;
 
     @FindBy(css = "div.result")
-    WebElement RigsteredMessage;
+    public WebElement Message;
 
     @FindBy(xpath = "//a[@class=\"ico-logout\"]")
-    WebElement logout;
+    public WebElement logout;
 
     @FindBy(id = "register-button")
     WebElement SubmitButton;
@@ -49,8 +49,8 @@ public class RegisterPage extends PageBase {
         } else {
             ClickButtons(Female);
         }
-        SendValue(this.firstName, firstName);
-        SendValue(this.lastName, lastName);
+        SendValue(firstNameField, firstName);
+        SendValue(lastNameField, lastName);
 
         Select Day = new Select(driver.findElement(By.name("DateOfBirthDay")));
         Day.selectByIndex(10);
@@ -68,13 +68,4 @@ public class RegisterPage extends PageBase {
         ClickButtons(logout);
     }
 
-    public WebElement getRigsteredMsg() {
-        return RigsteredMessage;
-    }
-
-
-
-    public WebElement getLogout() {
-        return logout;
-    }
 }

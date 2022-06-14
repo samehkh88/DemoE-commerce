@@ -8,13 +8,17 @@ public class LoginPage extends PageBase {
 
     @FindBy(id = "Email")
     WebElement emailField;
+
     @FindBy(id = "Password")
     WebElement passwordField;
+
     @FindBy(xpath = "//button[@class=\"button-1 login-button\"]")
     WebElement loginButton;
+
     @FindBy(linkText = "Forgot password?")
     WebElement forgotPasswordButton;
 
+    // use it direct in TC for verify
     @FindBy(xpath = ".//div[@class='message-error validation-summary-errors']")
     public WebElement errorMessage ;
 

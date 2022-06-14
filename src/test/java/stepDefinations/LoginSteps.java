@@ -38,7 +38,7 @@ public class LoginSteps extends TestRunnerTest {
     @Then("^the system redirect to the home page and log out appear$")
     public void the_system_redirect_to_the_home_page_and_log_out_appear() {
         registerPageObj = new RegisterPage(driver);
-        String logOut = registerPageObj.getLogout().getText();
+        String logOut = registerPageObj.logout.getText();
         Assert.assertTrue(logOut.equals("Log out"));
         Assert.assertTrue(homePage.myAccount.isDisplayed());
 

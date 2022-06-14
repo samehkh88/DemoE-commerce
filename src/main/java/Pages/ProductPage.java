@@ -9,6 +9,7 @@ public class ProductPage extends PageBase {
     @FindBy(id = "add-to-cart-button-4")
     public WebElement AddToCartButton;
 
+    // use it direct in TC for verify
     @FindBy(xpath = "//p[@class='content']")
     public WebElement SuccessMessage;
 

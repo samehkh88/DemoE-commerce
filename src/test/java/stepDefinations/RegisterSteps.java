@@ -34,8 +34,8 @@ public class RegisterSteps extends TestRunnerTest {
 
     @Then("^the system show success message$")
     public void the_system_show_success_message() {
-        String message = RegisterPageobj.getRigsteredMsg().getText();
-        String GreenColor = RegisterPageobj.getRigsteredMsg().getCssValue("color");
+        String message = RegisterPageobj.Message.getText();
+        String GreenColor = RegisterPageobj.Message.getCssValue("color");
         Assert.assertTrue(message.contains("Your registration completed"));
         Assert.assertEquals("rgba(76, 177, 124, 1)", GreenColor);
     }
